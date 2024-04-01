@@ -1,0 +1,86 @@
+- title: SOUNDSCAPE
+  url: "/"
+
+- title: PROJECTS
+  url: "/projects/"
+  submenu:
+    - title: "Terrasse Roy: Creating a new public space"
+      url: "/projects/"
+
+    - title: "Noise policy guidelines: Valeur Guides"
+      url: "/projects/"
+
+    - title: "The (water) misters of Fleurs de Macadam"
+      url: "/projects/"
+
+    - title: "Co-designing soundscapes of public spaces"
+      url: "/projects/"
+
+    - title: "Translating soundscape scales"
+      url: "/projects/"
+
+    - title: "What should a restaurant sounds like?"
+      url: "/projects/"
+
+    - title: "Prototyping a soundscape simulator"
+      url: "/projects/"
+
+    - title: "COVID-19 and Sound"
+      url: "/projects/"
+
+    - title: "Context Matters"
+      url: "/projects/"
+
+    - title: "Sonic inquiry in Urban Research"
+      url: "/projects/"
+
+    - title: "Sonic Cohabitation in Montreal: ListenUpMTL / ÉcoutezMTL"
+      url: "/projects/"
+
+    - title: "What’s next for nightlife and night noise in Montreal?"
+      url: "/projects/"
+
+    - title: "The sounds of Quartier des Spectacles"
+      url: "/projects/"
+
+    - title: "Sound art in public spaces: Niches Acoustiques"
+      url: "/projects/"
+
+    - title: "Churches as places of restoration"
+      url: "/projects/"
+
+    - title: "Sharing music in public spaces: Musikiosk"
+      url: "/projects/"
+
+    - title: "Shaping the Fleurs-de-Macadam public space through sound"
+      url: "/projects/"
+
+    - title: "Using soundwalks to engage practitioners and the broader public on sound"
+      url: "/projects/"
+
+    - title: " Engaging practitioners and the broader public on sound"
+      url: "/projects/"
+
+- title: MEDIA
+  url: "/media/"
+  submenu:
+    - title: Papers
+      url: "/media/"
+
+    - title: Blog (archives)
+      url: "/media/"
+
+    - title: Events (archives)
+      url: "/media/"
+
+- title: ABOUT US
+  url: "/about/"
+  submenu:
+    - title: Partners & Fundings
+      url: "/about/"
+
+    - title: Services
+      url: "/about/"
+
+    - title: Contact
+      url: "/contact/"

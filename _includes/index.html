@@ -1,0 +1,116 @@
+<div id="banner">
+  <div class="logo-text">
+    <img src="/assets/images/logos/typo.png" alt="logo" />
+  </div>
+  <div class="slider">
+    <div class="slider1" id="slider1">
+      <div class="slide">
+        <img src="/assets/images/slides/slide1.png" alt="Image 1" />
+        <div class="slide-content">
+          <h2>COVID-19 and c</h2>
+          <p>Getting a taste of the quiet we thought we wanted.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/assets/images/slides/slide1.png" alt="Image 1" />
+        <div class="slide-content">
+          <h2>COVID-19 and c</h2>
+          <p>Getting a taste of the quiet we thought we wanted.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slick-prev">
+      <img
+        src="/assets/images/icons/arrow-left-black.svg"
+        alt="arrow-left"
+        class="icon-black"
+      />
+      <img
+        src="/assets/images/icons/arrow-left.svg"
+        alt="arrow-left"
+        class="icon-white"
+      />
+    </div>
+    <div class="slick-next">
+      <img
+        src="/assets/images/icons/arrow-right-black.svg"
+        alt="arrow-right"
+        class="icon-black"
+      />
+      <img
+        src="/assets/images/icons/arrow-right.svg"
+        alt="arrow-right"
+        class="icon-white"
+      />
+    </div>
+  </div>
+</div>
+<div id="info">
+  <div class="container">
+    <div class="info-wrapper">
+      <h2>
+        {{ t.cities }} <br />
+        {{ t.sound }}
+      </h2>
+      <h4>(not just less bad)</h4>
+      <p>
+        Sounds in the City, led by Prof. Guastavino, brings together
+        researchers, artists, professionals who shape our cities, and citizens,
+        to look at urban sound from a novel, resource-oriented perspective and
+        nourish creative solutions to make cities sound better.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="accordions">
+  {% assign lang = page.lang %} {% assign accordions =
+  site.data.locales[lang].index.accordions %} {% for item in accordions %}
+  <div class="accordion">
+    <button class="acc-header" data-target="{{ item.id }}">
+      <span class="label container">{{ item.title }}</span>
+      <span class="icon"></span>
+    </button>
+    <div id="{{ item.id }}" class="acc-content">
+      <div class="container">
+        <div class="acc-home">
+          <img src="{{ item.image }}" alt="" />
+          <p class="desc">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div id="team">
+  <div class="card" id="card1">
+    <div class="images">
+      <div class="overlay">
+        <img src="/assets//images/icons/eye.svg" alt="" class="icon" />
+        <p>DISCOVER WHO WE ARE</p>
+      </div>
+      <!-- Assuming 6 images, 3 in each row for card1 -->
+      <img src="/assets/images/team/1.png" alt="" />
+      <img src="/assets/images/team/2.png" alt="" />
+      <img src="/assets/images/team/3.png" alt="" />
+      <img src="/assets/images/team/4.png" alt="" />
+      <img src="/assets/images/team/5.png" alt="" />
+      <img src="/assets/images/team/6.png" alt="" />
+    </div>
+    <div class="card-footer">
+      <h3>WHO WE ARE</h3>
+      <p>Meet the team & collaborators</p>
+    </div>
+  </div>
+  <div class="card" id="card2">
+    <div class="images">
+      <div class="overlay">
+        <img src="/assets/images/icons/eye.svg" alt="" class="icon" />
+        <p>VIEW THE PARTNERS & FUNDINGS PAGE</p>
+      </div>
+      <img src="/assets/images/findings.png" alt="" />
+    </div>
+    <div class="card-footer">
+      <h3>FUNDINGS</h3>
+    </div>
+  </div>
+</div>
