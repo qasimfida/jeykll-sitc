@@ -21,8 +21,8 @@ about:
   back: Retour
 
 soundscape:
-  title: Why sound matters?
-  description: Often described as the “new secondhand smoke”, <strong>noise is a major pollutant</strong> of our time, with consequences ranging from annoyance and hearing loss to early death. Poor noise management also has environmental consequences as precious resources and space are wasted.
+  title: Pourquoi le son est important ?
+  description: Souvent décrit comme la « nouvelle fumée secondaire », le <strong>bruit est un polluant majeur</strong> de notre époque, avec des conséquences allant de la gêne et de la perte auditive jusqu'à la mort prématurée. Une mauvaise gestion du bruit a également des conséquences environnementales, car des ressources et un espace précieux sont gaspillés.
   p1:
     - url: "/assets/audios/1.mp3"
       id: "audio-1"
