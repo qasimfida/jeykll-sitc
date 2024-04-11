@@ -7,7 +7,7 @@
   </div>
   <div class="player-list">
     {% assign lang = page.lang %} {% assign p1 =
-    site.data.locales[lang]['why-sound-matters'].p1 %} {% for play in p1 %}
+    site.data.locales[lang]['soundscape'].p1 %} {% for play in p1 %}
 
     <div class="player" data-target="{{play.id}}">
       <div class="player-icon">
@@ -76,7 +76,7 @@
   </div>
   <div class="player-list mobile-mt-0">
     {% assign lang = page.lang %} {% assign p2 =
-    site.data.locales[lang]['why-sound-matters'].p2 %} {% for play in p2 %}
+    site.data.locales[lang]['soundscape'].p2 %} {% for play in p2 %}
 
     <div class="player" data-target="{{play.id}}">
       <div class="player-icon">
@@ -117,7 +117,7 @@
     </p>
   </div>
   <div class="steps">
-    <div class="scroll-to-top">
+    <div class="scroll-to-top" id="scroll-top" >
       <img src="/assets/images/icons/arrow-up.svg" alt="arrow-up" />
     </div>
     <div class="container">
