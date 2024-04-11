@@ -32,7 +32,7 @@
     append:page.lang %} {% assign navigation = site.data[key] %} {% for item in
     navigation %}
     <li class="menu-item item-main">
-      <a href="{{ item.url }}" class="heading menu-link"
+      <a href="/{{page.lang}}{{ item.url }}" class="heading menu-link"
         >{{ item.title }}
         <img
           alt="arrow"
@@ -49,7 +49,7 @@
       <ul class="sub-menu">
         {% for subitem in item.submenu %}
         <li class="menu-item">
-          <a href="{{ subitem.url }}" class="text-link menu-link-2"
+          <a href="/{{page.lang}}{{ subitem.url }}" class="text-link menu-link-2"
             >{{ subitem.title }}
             <img
               alt="arrow"

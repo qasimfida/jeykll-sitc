@@ -13,6 +13,7 @@ $light_grey: #A5A5A5;
 $black: #000;
 $white: #fff;
 $mobile_screen : 992px;
+$mobile_max_screen : 991px;
 
 h1,
 h2,
@@ -48,6 +49,7 @@ body {
   font-weight: 500;
   font-size: 44px;
   line-height: 46px;
+  text-transform: uppercase;
 }
 
 @media(min-width: $mobile_screen) {
@@ -119,6 +121,7 @@ body {
   padding: 0 40px;
   background-color: $white;
   z-index: 111;
+  border-bottom: 2px solid $black;
 
   ul {
     list-style-type: none;
@@ -592,3 +595,111 @@ body {
 }
 
 /* FOOTER STYLES ENDS HERE*/
+
+/* PLAYER LIST  STARTS HERE*/
+.player-list {
+  margin: 30px 0 0;
+
+  .player {
+      border: 2px solid $black;
+      border-bottom: 0;
+      display: flex;
+      min-height: 120px;
+      position: relative;
+      cursor: pointer;
+      audio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+      .hide {
+        display: none;
+      }
+      &:hover .player-icon {
+          background-color: $black;
+      }
+      &:last-child {
+          border-bottom: 2px solid $black;
+      }
+
+      .player-icon {
+          width: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $primary;
+          
+      }
+
+      .content {
+          padding: 24px 10px;
+          border-left: 2px solid $black;
+          display: flex;
+          justify-content: start;
+          width: 100%;
+          .info {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+          }
+          h3 {
+              font-size: 14px;
+              line-height: 26px;
+              font-weight: 700;
+              font-family: $font-family;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: $black;
+          }
+
+          p,
+          i {
+              display: block;
+              font-size: 16px;
+              line-height: 26px;
+              font-weight: 400;
+              font-family: $font-family;
+              letter-spacing: 2px;
+          }
+          .timing {
+              display: none;
+          }
+      }
+
+  }
+
+  @media (min-width: $mobile_screen) {
+      margin: 80px 0;
+      .player {
+          .content {
+              padding: 16px 36px 16px 36px;
+              border-left: 2px solid $black;
+              display: flex;
+              justify-content: space-between;
+              h3 {
+                  font-size: 16px;
+              }
+
+              p,
+              i {
+                  display: inline-block;
+                  font-size: 20px;
+                  line-height: 32px;
+              }
+          }
+          .timing {
+              display: flex !important;
+              align-items: center;
+              justify-content: center;
+              gap: 16px;
+              font-size: 16px;
+              line-height: 26px;
+              font-weight: 700;
+              font-family: $font-family;
+              letter-spacing: 2px;
+              color: $grey;
+          }
+      }
+  }
+}
+/* PLAYER LIST ENDS HERE*/
