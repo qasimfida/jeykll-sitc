@@ -93,3 +93,7 @@ soundscape:
     late, it also fails to build fairness into our cities. Indeed minoritized
     communities are subject to more stringent policing, and more likely to be
     exposed to higher noise levels."
+
+projects:
+  title: PROJECTS LIST
+  description: "projects description"

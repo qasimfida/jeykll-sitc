@@ -51,8 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* SCROLL TO TOP */
   const scrollTopBtn = document.getElementById("scroll-top");
-  scrollTopBtn.addEventListener("click", scrollTop);
-  function scrollTop() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+  if(scrollTopBtn){
+    scrollTopBtn.addEventListener("click", scrollTop);
+    function scrollTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
   }
+
+
+  // 
 });
