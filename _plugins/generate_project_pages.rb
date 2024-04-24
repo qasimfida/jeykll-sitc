@@ -14,6 +14,7 @@ Jekyll::Hooks.register :site, :pre_render do |site|
         page.data['title'] = project['title']
         page.data['description'] = project['description']
         page.data['image'] = project['image']
+        page.data['project_name'] = project['name']
         page.data['location'] = project['location']
         page.data['date'] = project['date']
         page.data['tags'] = project['tags']

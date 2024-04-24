@@ -372,8 +372,18 @@ body {
   margin: 0 auto;
 }
 
+.player-container {
+  width: 100%;
+  padding: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 @media(min-width: $mobile_screen) {
   .container {
+    padding: 0 20px;
+  }
+  .player-container {
     padding: 0 20px;
   }
 }
@@ -488,6 +498,16 @@ body {
 
       }
 
+      &:hover {
+        .icon {
+          background-color: $black;
+          &::after,
+          &:before {
+            background-color: $white;
+          }
+        }
+      }
+
       &.active {
         border-bottom: 2px solid $black;
 
@@ -495,7 +515,7 @@ body {
           background-color: $black;
 
           &:after {
-            display: block;
+            display: none;
           }
 
           &:after,
@@ -525,7 +545,7 @@ body {
 
         &::after {
           transform: rotate(90deg);
-          display: none;
+          display: block;
         }
 
         &::after,
@@ -632,6 +652,7 @@ body {
 
     .player-icon {
       width: 120px;
+      min-width: 120px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -744,6 +765,7 @@ body {
     height: 60px;
     padding: 12px 30px;
     font-size: 14px;
+
     .x-icon {
       font-size: 22px;
     }

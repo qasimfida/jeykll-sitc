@@ -1,41 +1,43 @@
 function filterProjects() {
   const projects = document.querySelectorAll(".list-item");
-  const tagsContainer = document.getElementById("searchTags");
-  const filterTags = Array.from(tagsContainer.childNodes).map((tag) =>
-    tag.dataset.value.toLowerCase()
-  );
-  let visibleCount = 0;
-  if (filterTags.length > 0) {
-    // Apply filters only if there are tags
-    projects.forEach((project) => {
-      const projectTags = [
-        ...project.dataset.tags
-          .toLowerCase()
-          .split(",")
-          .flatMap((tag) => tag.split(" ")),
-        ...project.dataset.tags.toLowerCase().split(","),
-      ];
-      const isVisible = filterTags.some((filterTag) =>
-        projectTags.includes(filterTag)
-      );
-      project.style.display = isVisible ? "" : "none";
-      if (isVisible) visibleCount++; // Increment count if project is visible
-    });
-  } else {
-    // No tags means display top 3 projects
-    projects.forEach((project, index) => {
-      project.style.display = index < 3 ? "" : "none";
-      if (index < 3) visibleCount++;
-    });
-  }
+  if (projects?.length) {
+    const tagsContainer = document.getElementById("searchTags");
+    const filterTags = Array.from(tagsContainer.childNodes).map((tag) =>
+      tag.dataset.value.toLowerCase()
+    );
+    let visibleCount = 0;
+    if (filterTags.length > 0) {
+      // Apply filters only if there are tags
+      projects.forEach((project) => {
+        const projectTags = [
+          ...project.dataset.tags
+            .toLowerCase()
+            .split(",")
+            .flatMap((tag) => tag.split(" ")),
+          ...project.dataset.tags.toLowerCase().split(","),
+        ];
+        const isVisible = filterTags.some((filterTag) =>
+          projectTags.includes(filterTag)
+        );
+        project.style.display = isVisible ? "" : "none";
+        if (isVisible) visibleCount++; // Increment count if project is visible
+      });
+    } else {
+      // No tags means display top 3 projects
+      projects.forEach((project, index) => {
+        project.style.display = index < 3 ? "" : "none";
+        if (index < 3) visibleCount++;
+      });
+    }
 
-  const noResults = document.getElementById("noResultsMessage");
-  if (visibleCount > 0) {
-    if (noResults) noResults.style.display = "none";
-  } else {
-    if (noResults) {
-      noResults.style.display = "block";
-      noResults.textContent = "No projects found with the given search.";
+    const noResults = document.getElementById("noResultsMessage");
+    if (visibleCount > 0) {
+      if (noResults) noResults.style.display = "none";
+    } else {
+      if (noResults) {
+        noResults.style.display = "block";
+        noResults.textContent = "No projects found with the given search.";
+      }
     }
   }
 }

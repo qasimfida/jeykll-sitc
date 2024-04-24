@@ -97,3 +97,26 @@ soundscape:
 projects:
   title: PROJECTS LIST
   description: "projects description"
+  where: 'WHERE'
+  tags: "TAGS"
+  fundings: "FUNDINGS"
+  collaborators: "COLLABORATORS"
+  previous: "Previous"
+  next: "NEXT"
+  about_this_project: "ABOUT THE PROJECT"
+  links: "LINKS"
+  media_coverage: "For media coverage on the project, check these links"
+  academic_output: "For the academic output, consult these publications and links"
+  after: "AFTER"
+  before: "BEFORE"
+  year: "YEAR"
+  credits: "Credits"
+
+media:
+  title: "MEDIA"
+
+papers:
+  title: "PAPERS"
+  dio: "dio"
+  author: "AUTHOR"
+  read: "READ"

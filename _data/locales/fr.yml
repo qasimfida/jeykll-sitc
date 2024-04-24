@@ -1,28 +1,30 @@
 index:
-  title: LES VILLES PEUVENT UN SON MIEUX
-  cities: LES VILLES PEUVENT
-  sound: UN SON MIEUX
+  cities: CITIES CAN
+  sound: SOUND BETTER
   discover: DISCOVER WHO WE ARE
   accordions:
-    -title: SOUNDS IN CITIES
-    description: "Sound plays a critical and complex role in the way we experience urban spaces. Today, cities treat urban sound as “noise”, an isolated nuisance that should be mitigated when problems arise. But sound can also support our well-being, orientation, focus, and our lasting memories of urban spaces - even the city as a whole (e.g. music, conversation, bird chirping, water sounds)."
-    image: '/assets/images/accordions/home/1.png'
-    
-    -title: WHAT IS SOUNDSCAPE?
-    description: "Sound plays a critical and complex role in the way we experience urban spaces. Today, cities treat urban sound as “noise”, an isolated nuisance that should be mitigated when problems arise. But sound can also support our well-being, orientation, focus, and our lasting memories of urban spaces - even the city as a whole (e.g. music, conversation, bird chirping, water sounds)."
-    image: '/assets/images/accordions/home/1.png'
+    - title: SOUNDS IN CITIES
+      id: "home-accordion-1"
+      description: "Sound plays a critical and complex role in the way we experience urban spaces. Today, cities treat urban sound as “noise”, an isolated nuisance that should be mitigated when problems arise. But sound can also support our well-being, orientation, focus, and our lasting memories of urban spaces - even the city as a whole (e.g. music, conversation, bird chirping, water sounds)."
+      image: "/assets/images/accordions/home/1.png"
 
-    -title: LOCATION
-    description: "Sound plays a critical and complex role in the way we experience urban spaces. Today, cities treat urban sound as “noise”, an isolated nuisance that should be mitigated when problems arise. But sound can also support our well-being, orientation, focus, and our lasting memories of urban spaces - even the city as a whole (e.g. music, conversation, bird chirping, water sounds)."
-    image: '/assets/images/accordions/home/1.png'
+    - title: WHAT IS SOUNDSCAPE?
+      id: "home-accordion-2"
+      description: "Sound plays a critical and complex role in the way we experience urban spaces. Today, cities treat urban sound as “noise”, an isolated nuisance that should be mitigated when problems arise. But sound can also support our well-being, orientation, focus, and our lasting memories of urban spaces - even the city as a whole (e.g. music, conversation, bird chirping, water sounds)."
+      image: "/assets/images/accordions/home/1.png"
+
+    - title: LOCATION
+      id: "home-accordion-3"
+      description: "Sound plays a critical and complex role in the way we experience urban spaces. Today, cities treat urban sound as “noise”, an isolated nuisance that should be mitigated when problems arise. But sound can also support our well-being, orientation, focus, and our lasting memories of urban spaces - even the city as a whole (e.g. music, conversation, bird chirping, water sounds)."
+      image: "/assets/images/accordions/home/1.png"
 
 about:
-  title: À propos
-  back: Retour
+  title: About
+  back: Back
 
 soundscape:
-  title: Pourquoi le son est important ?
-  description: Souvent décrit comme la « nouvelle fumée secondaire », le <strong>bruit est un polluant majeur</strong> de notre époque, avec des conséquences allant de la gêne et de la perte auditive jusqu'à la mort prématurée. Une mauvaise gestion du bruit a également des conséquences environnementales, car des ressources et un espace précieux sont gaspillés.
+  title: Why sound matters?
+  description: Often described as the “new secondhand smoke”, <strong>noise is a major pollutant</strong> of our time, with consequences ranging from annoyance and hearing loss to early death. Poor noise management also has environmental consequences as precious resources and space are wasted.
   p1:
     - url: "/assets/audios/1.mp3"
       id: "audio-1"
@@ -93,5 +95,28 @@ soundscape:
     exposed to higher noise levels."
 
 projects:
-  title: LISTE DE PROJETS
+  title: PROJECTS LIST
   description: "projects description"
+  where: 'OÙ'
+  tags: "TAGS"
+  fundings: "FUNDINGS"
+  collaborators: "COLLABORATORS"
+  previous: "Previous"
+  next: "NEXT"
+  about_this_project: "ABOUT THE PROJECT"
+  links: "LINKS"
+  media_coverage: "For media coverage on the project, check these links"
+  academic_output: "For the academic output, consult these publications and links"
+  after: "AFTER"
+  before: "BEFORE"
+  year: "ANNÉE"
+  credits: "Credits"
+
+media:
+  title: "MEDIA"
+
+papers:
+  title: "PAPIERS"
+  dio: "dio"
+  author: "AUTHOR"
+  read: "LIRE"
