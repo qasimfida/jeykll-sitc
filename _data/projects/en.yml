@@ -83,7 +83,7 @@
   prev_url: "project_1"
   next_url: ''
 
-- title: "English ROY: English A NEW PUBLIC SPACE"
+- title: "TEST SEARCH"
   description: "A pedestrianization in the heart of the Plateau-Mont-Royal."
   location: "Plateau-Mont-Royal, Montreal, QC"
   date: "Summer and Fall 2017"
@@ -93,8 +93,6 @@
   collaborators: "City of Montreal (Arrondissement Plateau-Mont-Royal)"
   name: "TERRASSES ROY"
   tags:
-    - name: public space
-      id: 'public_space'
     - name: pedestrianizationTAGS
       id: 'pedestrianizationTAGS'
     - name: soundscape evaluation

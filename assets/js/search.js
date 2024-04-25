@@ -16,8 +16,9 @@ function filterProjects() {
             .flatMap((tag) => tag.split(" ")),
           ...project.dataset.tags.toLowerCase().split(","),
         ];
+        const projectTitle = project.dataset.title.toLowerCase();
         const isVisible = filterTags.some((filterTag) =>
-          projectTags.includes(filterTag)
+          projectTags.includes(filterTag) ||  projectTitle.includes(filterTag)
         );
         project.style.display = isVisible ? "" : "none";
         if (isVisible) visibleCount++; // Increment count if project is visible
