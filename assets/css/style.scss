@@ -699,85 +699,6 @@
         }
     }
 
-    .searchbar {
-        position: relative;
-        width: 100%;
-        max-width: 660px;
-
-        input {
-            position: relative;
-            height: 60px;
-            width: 100%;
-            max-width: 660px;
-            padding: 16px 80px 16px 20px;
-            border: 2px solid $black;
-            font-size: 16px;
-            outline: none;
-
-            &:focus,
-            &:active {
-                outline: none;
-            }
-        }
-
-        .icon {
-            position: absolute;
-            height: 60px;
-            width: 60px;
-            right: 0;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-left: 2px solid $black;
-            color: $black;
-            cursor: pointer;
-
-            svg {
-                height: 30px;
-            }
-        }
-
-        @media (min-width: $mobile_screen) {
-            input {
-                font-size: 32px;
-                height: 120px;
-                padding: 16px 160px 16px 40px;
-            }
-
-            .icon {
-                height: 120px;
-                width: 120px;
-
-                svg {
-                    height: 60px;
-                }
-            }
-        }
-
-        &:hover {
-            .icon {
-                background-color: $black;
-                color: $white;
-            }
-        }
-    }
-
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-        margin-bottom: 30px;
-
-        &.space-t {
-            margin-top: 20px;
-        }
-
-        @media (min-width: $mobile_screen) {
-            margin-bottom: 80px;
-        }
-    }
-
 
     .list {
         .container {
@@ -786,6 +707,10 @@
             @media (min-width: $mobile_screen) {
                 padding: 0 20px !important;
             }
+        }
+
+        .container.label {
+            padding: 0 30px !important;
         }
 
         .list-item {
@@ -905,7 +830,8 @@
                     }
 
                     @media (min-width: $mobile_screen) {
-                        width: 40%;
+                        width: 45%;
+                        min-width: calc(45% - 20px);
                         border-left: 2px solid $black;
                         border-right: 2px solid $black;
                         border-bottom: 0px solid $black;
@@ -917,7 +843,7 @@
                 .content {
                     width: 100%;
                     padding: 0 20px 30px;
-                    min-height: 182px;
+                    min-height: 120px;
 
                     h3 {
                         font-size: 14px;
@@ -963,6 +889,7 @@
                 @media (min-width: $mobile_screen) {
                     .content {
                         width: 35%;
+                        min-width: calc(35% - 20px);
                         padding: 30px 30px 0;
 
                         h3 {
@@ -979,7 +906,8 @@
                     }
 
                     .info {
-                        width: 25%;
+                        width: 20%;
+                        min-width: calc(20% - 20px);
                         padding: 30px 0;
                         display: block;
                     }
@@ -1026,7 +954,7 @@
                     h3 {
                         font-size: 14px;
                         font-weight: 700;
-                        text-transform: capitalize;
+                        text-transform: uppercase;
                         line-height: 20px;
                         letter-spacing: 2px;
                         color: $black;
@@ -1112,7 +1040,7 @@
 
         a {
             color: $black;
-            display: block;
+            display: inline-block;
         }
     }
 
@@ -1232,8 +1160,9 @@
         content: '';
     }
 
-    button {
+    a {
         background-color: $primary;
+        text-decoration: none;
         height: 40px;
         display: flex;
         gap: 24px;
@@ -1262,7 +1191,7 @@
     @media (min-width:$mobile_screen) {
         height: 240px;
 
-        button {
+        a {
             height: 100px;
             font-size: 6vw;
             font-weight: 500;
@@ -1388,6 +1317,7 @@
         p {
             font-size: 16px;
             line-height: 24px;
+
             a {
                 color: $black;
                 text-transform: uppercase;
@@ -1446,6 +1376,7 @@
             p {
                 font-size: 20px;
                 line-height: 32px;
+
                 a {
                     font-size: 20px;
                     line-height: 32px;
@@ -1496,4 +1427,88 @@
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+
+#events {
+    .about {
+         display: flex;
+         flex-direction: column;
+         gap:10px;
+    }
+    .info-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .col {
+            gap: 20px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .content {
+                width: 100%;
+
+                h3 {
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    color: $black;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $grey;
+                }
+            }
+
+        }
+    }
+    p.text {
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+
+        a {
+            color: $black;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width:$mobile_screen) {
+        .about {
+            gap:80px;
+        }
+        .info-wrapper {
+            flex-wrap: nowrap;
+            gap: 44px;
+            .col {
+                flex-wrap: nowrap;
+                gap: 44px;
+
+                .content {
+                    h3 {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+        p.text {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+    .no-border {
+        border-bottom: 0px !important;
+    }
 }

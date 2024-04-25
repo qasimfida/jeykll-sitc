@@ -93,16 +93,15 @@ body {
 }
 
 .text-link {
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
 }
 
 @media(min-width: $mobile_screen) {
   .text-link {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 
@@ -773,3 +772,89 @@ body {
 }
 
 /*  SEARCH TAG STYLES ENDS HERE*/
+
+.common-header {
+  padding: 30px 0;
+
+  @media (min-width: $mobile_screen) {
+      padding: 80px 0;
+  }
+}
+.searchbar {
+  position: relative;
+  width: 100%;
+  max-width: 660px;
+
+  input {
+      position: relative;
+      height: 60px;
+      width: 100%;
+      max-width: 660px;
+      padding: 16px 80px 16px 20px;
+      border: 2px solid $black;
+      font-size: 16px;
+      outline: none;
+
+      &:focus,
+      &:active {
+          outline: none;
+      }
+  }
+
+  .icon {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 2px solid $black;
+      color: $black;
+      cursor: pointer;
+
+      svg {
+          height: 30px;
+      }
+  }
+
+  @media (min-width: $mobile_screen) {
+      input {
+          font-size: 32px;
+          height: 120px;
+          padding: 16px 160px 16px 40px;
+      }
+
+      .icon {
+          height: 120px;
+          width: 120px;
+
+          svg {
+              height: 60px;
+          }
+      }
+  }
+
+  &:hover {
+      .icon {
+          background-color: $black;
+          color: $white;
+      }
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 30px;
+
+  &.space-t {
+      margin-top: 20px;
+  }
+
+  @media (min-width: $mobile_screen) {
+      margin-bottom: 80px;
+  }
+}

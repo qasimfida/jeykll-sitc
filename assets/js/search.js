@@ -21,13 +21,12 @@ function filterProjects() {
           projectTags.includes(filterTag) ||  projectTitle.includes(filterTag)
         );
         project.style.display = isVisible ? "" : "none";
-        if (isVisible) visibleCount++; // Increment count if project is visible
+        if (isVisible) visibleCount++;
       });
     } else {
-      // No tags means display top 3 projects
       projects.forEach((project, index) => {
-        project.style.display = index < 3 ? "" : "none";
-        if (index < 3) visibleCount++;
+        project.style.display = index < 40 ? "" : "none";
+        if (index < 40) visibleCount++;
       });
     }
 

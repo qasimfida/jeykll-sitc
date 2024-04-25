@@ -111,6 +111,8 @@ projects:
   before: "BEFORE"
   year: "YEAR"
   credits: "Credits"
+  discover_project: "DISCOVER THE PROJET"
+  author: "author"
 
 media:
   title: "MEDIA"
@@ -120,3 +122,34 @@ papers:
   dio: "dio"
   author: "AUTHOR"
   read: "READ"
+
+blogs:
+  title: "BLOG ARCHIVES"
+  description: "This blog has French and English content and may not be available in both languages."
+  where: 'WHERE'
+  tags: "TAGS"
+  fundings: "FUNDINGS"
+  collaborators: "COLLABORATORS"
+  previous: "Previous"
+  next: "NEXT"
+  about_this_project: "ABOUT THE PROJECT"
+  links: "LINKS"
+  media_coverage: "For media coverage on the project, check these links"
+  academic_output: "For the academic output, consult these publications and links"
+  after: "AFTER"
+  before: "BEFORE"
+  year: "YEAR"
+  credits: "Credits"
+  author: "author"
+  posted: "POSTED"
+  discover_blog: "DISCOVER THE BLOG"
+  when: 'WHEN'
+  for_details: "For more information (French only)"
+
+events:
+  title: "EVENTS ARCHIVES"
+  description: "This blog has French and English content and may not be available in both languages."
+  time: 'TIME'
+  location: 'LOCATION'
+  language: 'LANGUAGE'
+  info: 'Info'

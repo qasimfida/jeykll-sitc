@@ -2,6 +2,7 @@
   <div class="container">
     <div class="projects-header">
       <h2 class="title heading">{{ t.title }}</h2>
+      <p class="text-link" >{{t.description}}</p>
     </div>
     <form class="searchbar" id="searchForm">
       <input type="text" id="searchInput" />
@@ -37,26 +38,26 @@
   <div class="list">
     <div id="noResultsMessage"></div>
 
-    {% assign lang = page.lang %} {% assign projects =
-    site.data.projects[lang] %} {% for project in projects %}
-    {% assign tag_names = project.tags | map: 'name' %}
-    <a class="list-item" data-tags="{{ tag_names | join: ',' | downcase }}" data-title="{{project.title}}"  href="/{{ lang | append:'/projects/' | append: project.url}}" >
+    {% assign lang = page.lang %} {% assign blogs =
+    site.data.blogs[lang] %} {% for blog in blogs %}
+    {% assign tag_names = blog.tags | map: 'name' %}
+    <a class="list-item" data-tags="{{ tag_names | join: ',' | downcase }}" data-title="{{blog.title}}"  href="/{{ lang | append:'/blogs/' | append: blog.url}}" >
       <div class="container">
         <div class="card">
           <div class="media">
             <div class="overlay">
               <img src="/assets/images/icons/eye.svg" alt="" class="icon" />
-              <p>{{t.discover_project}}</p>
+              <p>{{t.discover_blog}}</p>
             </div>
-            <img src="{{project.image}}" alt="slide" />
+            <img src="{{blog.image}}" alt="slide" />
           </div>
           <div class="content">
-            <h3>{{project.title}}</h3>
-            <p>{{project.description}}</p>
+            <h3>{{blog.title}}</h3>
+            <p>{{blog.description}}</p>
           </div>
           <div class="info">
-            <p><span>{{t.where}}</span><br />{{project.location}}</p>
-            <p><span>{{t.year}}</span><br />{{project.date}}</p>
+            <p><span>{{t.author}}</span><br />{{blog.author}}</p>
+            <p><span>{{t.posted}}</span><br />{{blog.posted}}</p>
           </div>
         </div>
       </div>

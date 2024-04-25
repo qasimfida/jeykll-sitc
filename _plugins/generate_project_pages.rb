@@ -29,8 +29,8 @@ Jekyll::Hooks.register :site, :pre_render do |site|
         page.data['publications'] = project['publications']
         page.data['contact_info'] = project['contact_info']
         page.data['permalink'] = "/#{lang}/projects/#{project['url']}"
-        page.data['next_url'] = "/#{lang}/projects/#{project['next_url']}"
-        page.data['prev_url'] = "/#{lang}/projects/#{project['prev_url']}"
+        page.data['next_project_url'] = "/#{lang}/projects/#{project['next_url']}"
+        page.data['prev_project_url'] = "/#{lang}/projects/#{project['prev_url']}"
       end
     end
   end
