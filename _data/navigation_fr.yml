@@ -1,4 +1,4 @@
-- title: PAYSAGE SONORE
+- title: SOUNDSCAPE
   url: "/soundscape"
 
 - title: PROJECTS
@@ -20,10 +20,10 @@
   url: "/about/"
   submenu:
     - title: Partners & Fundings
-      url: "/about/"
+      url: "/partners/"
 
     - title: Services
-      url: "/about/"
+      url: "/services/"
 
     - title: Contact
       url: "/contact/"
