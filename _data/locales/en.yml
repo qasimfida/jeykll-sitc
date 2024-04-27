@@ -2,6 +2,16 @@ index:
   cities: CITIES CAN
   sound: SOUND BETTER
   discover: DISCOVER WHO WE ARE
+  notbad: "(not just less bad)"
+  description: "Sounds in the City, led by Prof. Guastavino, brings together
+        researchers, artists, professionals who shape our cities, and citizens,
+        to look at urban sound from a novel, resource-oriented perspective and
+        nourish creative solutions to make cities sound better."
+  discover: "DISCOVER WHO WE ARE"
+  who: "WHO WE ARE"
+  meet: "Meet the team & collaborators"
+  view: "VIEW THE PARTNERS & FUNDINGS PAGE"
+  funding: "FUNDINGS"
   accordions:
     - title: SOUNDS IN CITIES
       id: "home-accordion-1"
@@ -17,6 +27,22 @@ index:
       id: "home-accordion-3"
       description: "Sound plays a critical and complex role in the way we experience urban spaces. Today, cities treat urban sound as “noise”, an isolated nuisance that should be mitigated when problems arise. But sound can also support our well-being, orientation, focus, and our lasting memories of urban spaces - even the city as a whole (e.g. music, conversation, bird chirping, water sounds)."
       image: "/assets/images/accordions/home/1.png"
+  slides:
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
 
 about:
   title: "About Us"
@@ -153,3 +179,164 @@ events:
   location: 'LOCATION'
   language: 'LANGUAGE'
   info: 'Info'
+
+partners:
+  title: "PARTNERS & FUNDINGS"
+  city:
+    title: "City of Montreal"
+    links:
+      - name: "Ville-Marie borough, Inspection"
+        language: "(in French only)"
+        url: "#"
+      - name: "Ville-Marie borough, Urban Planning"
+        language: "(in French only)"
+        url: "#"
+      - name: "Le Plateau-Mont-Royal borough Urban Planning"
+        language: "(in French only)"
+        url: "#"
+  organization:
+    title: "Organizations"
+    links:
+      - name: "Quartier des Spectacles"
+        url: "#"
+      - name: "Audiotopie"
+        url: "#"
+      - name: "ARUP"
+      - name: "Local Logic"
+        url: "#"
+      - name: "Center for Interdisciplinary Research in Music Media and Technology (CIRMMT)"
+        url: "#"
+      - name: "Goethe-Institut Montreal"
+        url: "#"
+      - name: "McGill Innovation Week"
+        url: "#"
+  funding:
+    title: "Funding"
+    links:
+      - name: "Social Sciences and Humanities Research Council (SSHRC) grants to C. Guastavino (2016-2018, 2018-2021)"
+      - name: "MITACS"
+        url: "#"
+      - name: "Ministère de l'Environnement et de la Lutte aux changements climatiques"
+        language: "(French only)"
+        url: "#"
+      - name: "Ministère de la Santé et des Services sociaux"
+        language: "(French only)"
+        url: "#"
+services:
+  title: "Services"
+  description: "Let us transform your sound-related questions into evidence-based action plans! We have experience in collaborative research projects with different funding agencies, but also industry contracts and we’re open to consulting opportunities.<br><br><strong>We have a history of turning ideas into a concrete process with viable outcomes</strong>. So, whether you are a planning or design firm, an academic or health institution, a municipality, a non-governmental entity or a corporate setting, we can help you:"
+  list:
+    - info: "Articulate your sound-related needs and expectations, and integrating them into a broader plan for your products, services and spaces"
+      image: "/assets/images/icons/files-contained.svg"
+      alt: "service-1"
+      
+    - info: "Identify and strategize sound-related transformations"
+      image: "/assets/images/icons/eye-contained.svg"
+      alt: "service-2"
+      
+    - info: "Facilitate communication between engineering and design professionals to articulate solutions and interventions"
+      image: "/assets/images/icons/chat-contained.svg"
+      alt: "service-3"
+      
+    - info: "Identify and preserve “high quality” sound environments"
+      image: "/assets/images/icons/star-contained.svg"
+      alt: "service-4"
+      
+    - info: "Enhance the quality of experience through sound"
+      image: "/assets/images/icons/sound-contained.svg"
+      alt: "service-5"
+      
+    - info: "Reinforce the sonic identity of heritage places"
+      image: "/assets/images/icons/building-contained.svg"
+      alt: "service-6"
+  difference: "DIFFERENT  PERSPECTIVES ON"
+  sound: "SOUND"
+  info: "Our projects rely on participatory approaches to the design of built environment and products, integrating different perspectives on sound from a wide range of stakeholders.  "
+  accordions:
+    - name: "Research methods"
+      id: "research"
+      points:
+        - name: "Participatory research approaches with an “ear” for fairness and equity"
+        - name: "For public space and ambiance"
+        - name: Balancing quantitative and qualitative insights
+        - name: Developing research instruments and tools
+        - name: Documenting and integrating insights from different stakeholders
+        - name: Characterization of sound environments of e.g., “high quality”
+    - name: "Workshops "
+      id: "workshop"
+      points:
+        - name: "Participatory research approaches with an “ear” for fairness and equity"
+        - name: "For public space and ambiance"
+        - name: Balancing quantitative and qualitative insights
+        - name: Developing research instruments and tools
+        - name: Documenting and integrating insights from different stakeholders
+        - name: Characterization of sound environments of e.g., “high quality”
+    - name: "Knowledge mobilization"
+      id: "knowledge"
+      points:
+        - name: "Participatory research approaches with an “ear” for fairness and equity"
+        - name: "For public space and ambiance"
+        - name: Balancing quantitative and qualitative insights
+        - name: Developing research instruments and tools
+        - name: Documenting and integrating insights from different stakeholders
+        - name: Characterization of sound environments of e.g., “high quality”
+    - name: "Research creation"
+      id: "creation"
+      points:
+        - name: "Participatory research approaches with an “ear” for fairness and equity"
+        - name: "For public space and ambiance"
+        - name: Balancing quantitative and qualitative insights
+        - name: Developing research instruments and tools
+        - name: Documenting and integrating insights from different stakeholders
+        - name: Characterization of sound environments of e.g., “high quality”
+    - name: "Outreach / sound awareness"
+      id: "awareness"
+      points:
+        - name: "Participatory research approaches with an “ear” for fairness and equity"
+        - name: "For public space and ambiance"
+        - name: Balancing quantitative and qualitative insights
+        - name: Developing research instruments and tools
+        - name: Documenting and integrating insights from different stakeholders
+        - name: Characterization of sound environments of e.g., “high quality” 
+  slides:
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+    - title: "COVID-19 and c"
+      description: "Getting a taste of the quiet we thought we wanted"
+      image: "/assets/images/slides/slide1.png"
+
+contact:
+  title: "Contact"
+  telephone: "Telephone"
+  team:
+    title: "TEAM MEMBERS"
+    members:
+      - name: "Catherine Guastavino"
+        role: "Principal Investigator"
+        email: "catherine.guastavino@mcgill.ca"
+        phone: "514-398-1709"
+      - name: "Daniel Steele"
+        role: "Lead Researcher"
+        email: "daniel.steele@mail.mcgill.ca"
+  contact:
+    title: "Noise Regulation Database"
+    links:
+      - name: "To contribute to the noise regulation database, please send your documentation to"
+      - name: "catherine.guastavino@mcgill.ca"
+        url: "#"
+  address:
+    title: "MAILING ADDRESS"
+    location:
+      - name: "School of Information StudiesMcGill University"
+      - name: "3661 Peel Street,"
+      - name: "Montreal, QC (Canada) H3A 1X1"

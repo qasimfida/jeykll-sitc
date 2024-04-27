@@ -4,12 +4,12 @@
       <h2 class="title heading">{{ t.title }}</h2>
     </div>
   </div>
-  <div class="container">
+  <div class="container no-padding">
     <div class="accordions">
       {% assign lang = page.lang %} {% assign staff = site.data.team[lang].staff
       %}
       <div class="accordion">
-        <button class="acc-header active" data-target="staff">
+        <button class="acc-header active bordered" data-target="staff">
           <span class="label"> {{staff.title}} </span>
           <span class="icon"></span>
         </button>
@@ -39,7 +39,7 @@
       {% assign lang = page.lang %} {% assign staff =
       site.data.team[lang].alumni %}
       <div class="accordion">
-        <button class="acc-header" data-target="alumni">
+        <button class="acc-header bordered" data-target="alumni">
           <span class="label"> {{staff.title}} </span>
           <span class="icon"></span>
         </button>

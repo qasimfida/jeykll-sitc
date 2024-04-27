@@ -406,6 +406,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    &.black {
+      background-color: $black;
+      flex-direction: column;
+      h4 {
+        font-weight: 700;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        color: $white;
+        width: 154px;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+      }
+      p {
+        display: block;
+        text-align: center;
+        color: $white;
+      }
+    }
 
     img {
       width: 233px;
@@ -415,6 +434,9 @@ body {
 
   .slider {
     width: 100%;
+    &.bordered {
+      border-top: 2px solid $black;
+    }
 
     .slide {
       width: 100%;
@@ -433,6 +455,9 @@ body {
     .logo-text {
       height: 622px;
       width: 33.33%;
+      h4 {
+        font-size: 16px;
+      }
     }
 
     .slider {
