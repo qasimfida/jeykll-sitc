@@ -4,20 +4,15 @@
   </div>
   <div class="slider">
     <div class="slider1" id="slider1">
+      {% for slide in t.slides %}
       <div class="slide">
-        <img src="/assets/images/slides/slide1.png" alt="Image 1" />
+        <img src="{{slide.image}}" alt="{{slide.title}}" />
         <div class="slide-content">
-          <h2>COVID-19 and c</h2>
-          <p>Getting a taste of the quiet we thought we wanted.</p>
+          <h2>{{slide.title}}</h2>
+          <p>{{slide.description}}</p>
         </div>
       </div>
-      <div class="slide">
-        <img src="/assets/images/slides/slide1.png" alt="Image 1" />
-        <div class="slide-content">
-          <h2>COVID-19 and c</h2>
-          <p>Getting a taste of the quiet we thought we wanted.</p>
-        </div>
-      </div>
+      {%endfor%}
     </div>
     <div class="slick-prev">
       <img
@@ -52,19 +47,13 @@
         {{ t.cities }} <br />
         {{ t.sound }}
       </h2>
-      <h4>(not just less bad)</h4>
-      <p>
-        Sounds in the City, led by Prof. Guastavino, brings together
-        researchers, artists, professionals who shape our cities, and citizens,
-        to look at urban sound from a novel, resource-oriented perspective and
-        nourish creative solutions to make cities sound better.
-      </p>
+      <h4>{{t.notbad}}</h4>
+      <p>{{t.description}}</p>
     </div>
   </div>
 </div>
 <div class="accordions">
-  {% assign lang = page.lang %} {% assign accordions =
-  site.data.locales[lang].index.accordions %} {% for item in accordions %}
+  {% for item in t.accordions %}
   <div class="accordion">
     <button class="acc-header" data-target="{{ item.id }}">
       <span class="label container">{{ item.title }}</span>
@@ -86,7 +75,7 @@
     <div class="images">
       <div class="overlay">
         <img src="/assets//images/icons/eye.svg" alt="" class="icon" />
-        <p>DISCOVER WHO WE ARE</p>
+        <p>{{t.discover}}</p>
       </div>
       <!-- Assuming 6 images, 3 in each row for card1 -->
       <img src="/assets/images/team/1.png" alt="" />
@@ -96,21 +85,21 @@
       <img src="/assets/images/team/5.png" alt="" />
       <img src="/assets/images/team/6.png" alt="" />
     </div>
-    <div class="card-footer">
-      <h3>WHO WE ARE</h3>
-      <p>Meet the team & collaborators</p>
+    <div class="card-footer border-t border-l">
+      <h3>{{t.who}}</h3>
+      <p>{{t.meet}}</p>
     </div>
   </div>
-  <div class="card" id="card2">
+  <div class="card border-l" id="card2">
     <div class="images">
       <div class="overlay">
         <img src="/assets/images/icons/eye.svg" alt="" class="icon" />
-        <p>VIEW THE PARTNERS & FUNDINGS PAGE</p>
+        <p>{{t.view}}</p>
       </div>
       <img src="/assets/images/findings.png" alt="" />
     </div>
-    <div class="card-footer">
-      <h3>FUNDINGS</h3>
+    <div class="card-footer border-b border-r">
+      <h3>{{t.fundings}}</h3>
     </div>
   </div>
 </div>
